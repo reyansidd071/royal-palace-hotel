@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Royal Palace Hotel</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Royal Palace Hotel</h1>
+        <nav>
+            <a href="#home">Home</a>
+           <a href="#rooms">Rooms</a>
+            <a href="#about">About</a>
+           <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            </nav>
+            </header>
+            <main>
+            <section class="hero">
+                <h2> Welcome To Royal Palace Hotel</h2>
+                <p>Luxury,Comfort and unforgetteable experiences.</p>
+                <a href="https://wa.me/923113618081?text=Hello%20Royal%20Palace%20Hotel%2C%20I%20want%20to%20book%20a%20room." target="_blank">
+    <button>Book Now</button>
+</a>
+            </section>
+            <h2 id="rooms" style="color: red; font-size: 36px; font-family: Georgia, serif; letter-spacing: 2px;">Our Rooms</h2>
+            <div class="room-card">
+                <img src="deluxe.jpg" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Comfortable room with luxury facilities.</p>
+                <p>$150 / NIGHT</p>
+              <a href="https://wa.me/923113618081?text=Hello%20Royal%20Palace%20Hotel,%20I%20want%20to%20book%20a%20room.">
+    <button>Book Now</button>
+</a>
+</a>
+            </div>
+            <div class="room-card">
+            <img src="executive.jpg" alt="Executive Room">
+                <h3>Executive Room</h3>
+                <p>Elegant room with premium facilities.</p>
+                <P>$200 / NIGHT</P>
+             <a href="https://wa.me/923113618081?text=Hello%20Royal%20Palace%20Hotel,%20I%20want%20to%20book%20a%20room.">
+    <button>Book Now</button>
+</a>
+            </div>
+            <div class="room-card">
+                <img src="presidential.jpg" alt="Presidential Room">
+                <h3>Presidential Suite</h3>
+                <p>Luxury suite with premium comfort anf elegant design.</p>
+                <p>$250 / NIGHT</p>
+               <a href="https://wa.me/923113618081?text=Hello%20Royal%20Palace%20Hotel,%20I%20want%20to%20book%20a%20room.">
+    <button>Book Now</button>
+</a>
+                </div>
+                <section>
+                    <h2 style="color: red; font-size: 36px; font-family: Georgia, serif; letter-spacing: 2px;">Our Services</h2>
+                    <div class="service">
+                        <h3>Free Wifi</h3>
+                        <P>High speed internet for all guests.</P>
+                        </div>
+                        <div class="service">
+                            <h3>Swimming Pool</h3>
+                            <P>Enjoy your clean and relaxing Swimming pool.</P>
+                            </div>
+                            <div class="service">
+                                <h3>Restaurant</h3>
+                                <P>Delicious meals and refreshments.</P>
+                                </div>
+                                <div class="service">
+                                    <h3>Free Parking</h3>
+                                    <P>Safe and convenient parking for guests.</P>
+                                    </div>
+                </section>
+                <section id="about">
+    <h2>About Our Hotel</h2>
+    <p>Royal Palace Hotel offers luxury, comfort and a memorable stay for every guest.</p>
+    <p>Our hotel provides comfortable rooms, modern facilities, delicious food and friendly service.</p>
+</section>
+<section id="gallery">
+    <h2>Hotel Gallery</h2>
+
+    <div class="gallery-container">
+        <img src="lobby.jpg" alt="Hotel Lobby">
+        <img src="pool.jpg" alt="Swimming Pool">
+        <img src="restaurant.jpg" alt="Hotel Restaurant">
+    </div>
+</section>
+<section id="reviews">
+    <h2>Guest Reviews</h2>
+
+    <div class="reviews-container">
+
+        <div class="review-card">
+            <h3>Ahmed</h3>
+            <p>★★★★★</p>
+            <p>Beautiful hotel and very comfortable rooms.</p>
+        </div>
+
+        <div class="review-card">
+            <h3>Ali</h3>
+            <p>★★★★★</p>
+            <p>Excellent service and friendly staff.</p>
+        </div>
+
+        <div class="review-card">
+            <h3>Usman</h3>
+            <p>★★★★☆</p>
+            <p>Clean rooms and a great overall experience.</p>
+        </div>
+
+    </div>
+</section>
+         ```html
+<section id="contact">
+    <h2 style="color: red; font-size: 36px; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 2px;">
+        Contact Us
+    </h2>
+
+    <div class="contact-box">
+
+        <p>Phone: <a href="tel:+923113618081">+92 311 3618081</a></p>
+
+        <p>Email: <a href="mailto:reyansidd071@gmail.com">reyansidd071@gmail.com</a></p>
+
+        <p>Address: Sukkur, Pakistan</p>
+
+        <form class="booking-form" onsubmit="sendToWhatsApp(event)">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <input type="date" id="date" required>
+
+            <select id="room" required>
+                <option value="">Select Room</option>
+                <option>Deluxe Room</option>
+                <option>Executive Room</option>
+                <option>Presidential Suite</option>
+            </select>
+
+            <textarea id="message" placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Book Now
+            </button>
+
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Royal Palace Hotel. All Rights Reserved.</p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const date = document.getElementById("date").value;
+    const room = document.getElementById("room").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappMessage =
+        "Hello Royal Palace Hotel!" +
+        "\nName: " + name +
+        "\nEmail: " + email +
+        "\nPhone: " + phone +
+        "\nDate: " + date +
+        "\nRoom: " + room +
+        "\nMessage: " + message;
+
+    const whatsappURL =
+        "https://wa.me/923113618081?text=" +
+        encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+}
+</script>
+
+</body>
+</html>
+```
