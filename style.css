@@ -89,6 +89,15 @@ main {
     padding: 0;
 }
 
+/* PAGE HEADINGS */
+main h2 {
+    color: red;
+    font-size: 36px;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
 /* ROOM CARDS */
 .room-card {
     display: inline-block;
@@ -108,6 +117,63 @@ main {
     height: 209px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* GALLERY */
+.gallery {
+    text-align: center;
+    padding: 10px 20px 30px;
+}
+
+.gallery img {
+    width: 28%;
+    height: 180px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+/* CONTACT BOX */
+.contact-box {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto 40px;
+    padding: 25px;
+    background-color: #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.contact-box p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.contact-box a {
+    color: red;
+}
+
+/* FORM */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.booking-form textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
 /* FOOTER */
@@ -149,6 +215,7 @@ footer {
         font-size: 18px;
     }
 
+    /* ROOMS MOBILE */
     .room-card {
         display: block;
         width: 90%;
@@ -157,5 +224,23 @@ footer {
 
     .room-card img {
         height: 200px;
+    }
+
+    /* GALLERY MOBILE */
+    .gallery {
+        padding: 10px;
+    }
+
+    .gallery img {
+        width: 80%;
+        height: 170px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* CONTACT MOBILE */
+    .contact-box {
+        width: 90%;
+        padding: 20px;
     }
 }
